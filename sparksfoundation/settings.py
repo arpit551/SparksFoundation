@@ -25,7 +25,7 @@ SECRET_KEY = '1%)@3hyn^5e$%%+gflym*jmvsp-ome0g&74y4)z(vaai9lm#au'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sparksfoundation.herokuapp.com']
+ALLOWED_HOSTS = ['sparksfoundation.herokuapp.com','127.0.0.1']
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
