@@ -7,7 +7,7 @@
     <title>$Title$</title>
 </head>
 <body>
-{% if {{paid_status}} is 'True' %}
+{% if paid_status == 'True' %}
 <h1>Thanks {{donation.Name}} For making your Contribution</h1>
 {% endif %}
 {{ f }}
