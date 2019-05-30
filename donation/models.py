@@ -6,4 +6,6 @@ class Donations(models.Model):
     Email=models.EmailField()
     DonationAmount=models.IntegerField()
     PhoneNumber=models.CharField(max_length=10)
+    RequestId=models.CharField(max_length=100)
+    PaymentStatus=models.BooleanField(default=False)
 
