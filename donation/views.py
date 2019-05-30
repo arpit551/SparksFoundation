@@ -54,7 +54,7 @@ def donate(request):
         form = donateform()
         request_id=request.GET.get('payment_request_id')
         if request_id is not None:
-            donation=Donations.objects.filter(RequestId=request_id)
+            donation=Donations.objects.get(RequestId=request_id)
             donation.PaymentStatus=True
             donation.save()
             return render(request, 'home.html', {'form': form,'paid_status':'True','donation':donation,'f':request_id})
