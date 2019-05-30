@@ -52,7 +52,7 @@ def donate(request):
 
     else:
         form = donateform()
-        request_id=request.GET('payment_request_id')
+        request_id=request.GET['payment_request_id']
         if request_id is not None:
             donation=Donations.objects.filter(RequestId=request_id)
             donation.PaymentStatus=True
