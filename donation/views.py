@@ -57,6 +57,6 @@ def donate(request):
             donation=Donations.objects.get(RequestId=request_id)
             donation.PaymentStatus=True
             donation.save()
-            return render(request, 'home.html', {'form': form,'paid_status':'True','donation':donation,'f':request_id})
+            return render(request, 'home.html', {'form': form,'paid_status':'True','donation':donation})
         return render(request, 'home.html', {'form': form,'paid_status':'False'})
 
