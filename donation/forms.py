@@ -5,5 +5,7 @@ from donation.models import Donations
 class donateform(ModelForm):
     class Meta:
         model=Donations
-        fields=['Name','Email','DonationAmount','PhoneNumber']
+        fields=['Name','Email','DonationAmount']
+    #
+
 
